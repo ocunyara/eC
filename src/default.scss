@@ -1,0 +1,19 @@
+html {
+  font-size: 14px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

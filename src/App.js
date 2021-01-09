@@ -1,9 +1,21 @@
-function App() {
+import React from "react";
+import { Switch, Route } from 'react-router-dom';
+
+import './default.scss'
+
+import { HomePage } from './pages/Homepage'
+// import { Registration } from './pages/Registration'
+
+export const App = () => {
   return (
-    <div className="App">
-      test
-    </div>
+    <Switch>
+      <Route path="/">
+        <HomePage />
+      </Route>
+      <Route path="/registration">
+      {/*//  <Registration />*/}
+      </Route>
+    </Switch>
   );
 }
 
-export default App;

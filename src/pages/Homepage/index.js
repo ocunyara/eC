@@ -9,9 +9,7 @@ import './styles.scss';
 export const HomePage = props => {
   return (
     <section className="homepage">
-      <Header/>
-        <Directory />
-      <Footer/>
+      <Directory />
     </section>
   );
 };

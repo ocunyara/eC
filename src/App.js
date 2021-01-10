@@ -1,19 +1,25 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom';
 
-import './default.scss'
+import styles from './default.scss'
 
-import { HomePage } from './pages/Homepage'
-// import { Registration } from './pages/Registration'
+import { HomePage } from 'pages/Homepage'
+import { Registration } from 'pages/Registration'
+import { MainLayout } from 'layouts/MainLayout'
+import { HomepageLayout } from 'layouts/HomepageLayout'
 
 export const App = () => {
   return (
-    <Switch>
-      <Route path="/">
-        <HomePage />
+      <Switch>
+      <Route exact path="/">
+        <HomepageLayout>
+          <HomePage />
+        </HomepageLayout>
       </Route>
       <Route path="/registration">
-      {/*//  <Registration />*/}
+        <MainLayout>
+          <Registration />
+        </MainLayout>
       </Route>
     </Switch>
   );
